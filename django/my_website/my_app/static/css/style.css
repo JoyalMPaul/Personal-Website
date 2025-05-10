@@ -1,0 +1,48 @@
+/* Basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f4f9;
+    overflow: hidden;
+    position: relative; /* Ensure the floating elements are positioned relative to the body */
+}
+
+/* Floating element styles */
+.floating-element {
+    position: absolute;
+    animation: float 10s linear infinite, rotate 20s linear infinite;
+}
+
+/* Keyframe animations */
+@keyframes float {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(100px) translateY(-200px); }
+    50% { transform: translateX(-200px) translateY(100px); }
+    75% { transform: translateX(150px) translateY(250px); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styling for the floating elements */
+.laptop {
+    width: 150px;
+    height: 100px;
+    background: url('/static/css/ghost.png') no-repeat center center;
+    background-size: contain;
+}
+
+.code {
+    width: 120px;
+    height: 80px;
+    font-size: 1.1rem;
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

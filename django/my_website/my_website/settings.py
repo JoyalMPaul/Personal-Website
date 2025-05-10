@@ -58,6 +58,8 @@ INTERNAL_IPS = [
     # ...
 ]
 
+STATIC_URL = 'my_app/static/'
+
 ROOT_URLCONF = 'my_website.urls'
 
 TEMPLATES = [
