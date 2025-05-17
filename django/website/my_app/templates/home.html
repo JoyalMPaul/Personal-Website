@@ -4,17 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website!!!</title>
-    <link rel= "stylesheet" href="{% static 'css/style.css' %}?v=2">
-    <link rel="icon" href="{% static 'images/computer.png' %}?v=2" type="image/x-icon">
+    <link rel= "stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/computer.png' %}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>This is MY Website</h1>
     
+    <div class="web_surfing"></div>
     <p id="p1">Blah Blah</p>
-    <p id="p2">Cah Cah</p>
+    <p id="p2">Contacts</p>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <a href="https://www.linkedin.com/in/joyal-paul-955280354/">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/JoyalMPaul">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <div id="computer_movement"></div>
+    <script src="{% static 'javascript/animation.js' %}"></script>
+
 </body>
 
 </html>
 
+<!---Turn off Caching in Network tab when testing-->

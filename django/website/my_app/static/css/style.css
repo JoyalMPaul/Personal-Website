@@ -1,18 +1,96 @@
 body {
     background-color: black;
-}
+} 
 
 h1 {
     color: green;
+    text-align: center;
     font-family: "press Start 2P", "consolas", sans-serif;
+    border-style: solid;
+    border-width: 3px;  
+    width: 600px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.web_surfing {
+    color: green;
+    width: 100px;
+    height: 100px;
+    border: 3px;
+    border-style: solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/static/images/web_surfing_studio.png");
+    background-position: center;
+    background-size: cover;
 }
 
 #p1 {
     color: blue;
+    text-align: center;
     font-family: "consolas", sans-serif;
+    border-style: solid;
+    border-width: 3px;
+    border-color: green;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #p2 {
-    color: white;
+    color: red;
+    text-align: center;
     font-family: "consolas", sans-serif;
+    border-style: solid;
+    border-width: 3px;
+    border-color: green;
+    width: 200px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+a:link {
+    color: white;
+    text-align: center;
+    font-family: "consolas", sans-serif;
+    border-style: solid;
+    border-width: 3px;
+    border-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+#computer_movement {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    background-image: url("/static/images/computer.png");
+    background-position: center;
+    background-size: cover;
+
+    animation: floating;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes floating {
+  from {
+    left: 0;
+    bottom: 0;
+  }
+  to {
+    left: 100%;
+    bottom: 100%;
+  }
+}
+
+/*Turn off Caching in Network Tab when testing */
