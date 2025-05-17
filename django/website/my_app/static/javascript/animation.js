@@ -1,18 +1,33 @@
 //window.alert('Nice to see you here!');
 
-function spawnComputer() {
-  const comp = document.createElement("div");
-  comp.classList.add("computer");
+document.addEventListener("DOMContentLoaded", function () {
+    const element = document.getElementById("computer_movement");
 
-  const left = Math.random() * 80;
-  const bottom = Math.random() * 20;
-  comp.style.left = `${left}vw`;
-  comp.style.bottom = `${bottom}vh`;
-  comp.style.animationDelay = `${Math.random() * 3}s`;
+    // Generate random bottom values
+    const startBottom = Math.floor(Math.random() * 80); // between 0% and 80%
+    const endBottom = Math.floor(Math.random() * 80);   // same range
 
-  document.body.appendChild(comp);
-}
+    // Create a unique animation name
+    const animationName = `float_${Date.now()}`;
 
-for (let i = 0; i < 5; i++) {
-  spawnComputer();
-}
+    // Create keyframes dynamically
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerHTML = `
+        @keyframes ${animationName} {
+            from {
+                left: 0;
+                bottom: ${startBottom}%;
+            }
+            to {
+                left: 100%;
+                bottom: ${endBottom}%;
+            }
+        }
+    `;
+    document.head.appendChild(styleSheet);
+
+    // Apply the animation to the element
+    element.style.animation = `${animationName} 5s infinite linear`;
+});
+

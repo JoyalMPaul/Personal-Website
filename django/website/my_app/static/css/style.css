@@ -72,16 +72,14 @@ a:link {
     position: absolute;
     z-index: -1;
     left: 0;
-    right: 0;
     background-image: url("/static/images/computer.png");
     background-position: center;
     background-size: cover;
 
     animation: floating;
-    animation-iteration-count: infinite;
     animation-duration: 5s;
 }
-
+/*
 @keyframes floating {
   from {
     left: 0;
@@ -92,5 +90,5 @@ a:link {
     bottom: 100%;
   }
 }
-
+*/
 /*Turn off Caching in Network Tab when testing */
