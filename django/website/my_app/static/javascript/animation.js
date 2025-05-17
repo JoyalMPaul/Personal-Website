@@ -1,33 +1,44 @@
-//window.alert('Nice to see you here!');
+window.alert('Nice to see you here!');
 
 document.addEventListener("DOMContentLoaded", function () {
     const element = document.getElementById("computer_movement");
 
-    // Generate random bottom values
-    const startBottom = Math.floor(Math.random() * 80); // between 0% and 80%
-    const endBottom = Math.floor(Math.random() * 80);   // same range
+    function applyRandomAnimation() {
+        const startBottom = Math.floor(Math.random() * 80);
+        const endBottom = Math.floor(Math.random() * 80);
+        const animationName = `float_${Date.now()}`;
 
-    // Create a unique animation name
-    const animationName = `float_${Date.now()}`;
-
-    // Create keyframes dynamically
-    const styleSheet = document.createElement("style");
-    styleSheet.type = "text/css";
-    styleSheet.innerHTML = `
-        @keyframes ${animationName} {
-            from {
-                left: 0;
-                bottom: ${startBottom}%;
+        // Create and inject a unique keyframes rule
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerHTML = `
+            @keyframes ${animationName} {
+                from {
+                    left: 0;
+                    bottom: ${startBottom}%;
+                }
+                to {
+                    left: 100%;
+                    bottom: ${endBottom}%;
+                }
             }
-            to {
-                left: 100%;
-                bottom: ${endBottom}%;
-            }
-        }
-    `;
-    document.head.appendChild(styleSheet);
+        `;
+        document.head.appendChild(styleSheet);
 
-    // Apply the animation to the element
-    element.style.animation = `${animationName} 5s infinite linear`;
+        // Remove previous animation by setting to 'none'
+        element.style.animation = 'none';
+
+        // Trigger reflow to reset the animation
+        void element.offsetHeight; // This forces reflow
+
+        // Apply the new animation
+        element.style.animation = `${animationName} 5s linear forwards`;
+    }
+
+    // Apply initially
+    applyRandomAnimation();
+
+    // On each iteration, re-randomize
+    element.addEventListener("animationend", applyRandomAnimation);
 });
 
