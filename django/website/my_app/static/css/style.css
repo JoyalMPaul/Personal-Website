@@ -2,25 +2,39 @@ body {
     background-color: black;
 } 
 
-h1 {
-    color: green;
-    text-align: center;
-    font-family: "press Start 2P", "consolas", sans-serif;
+#intro, #info, #contact, h1 {
+  width: 90%;
+  color: white; 
+  max-width: 600px;
+  background-color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro, #info, a {
+    font-family: "consolas", sans-serif;
+    font-size: 16px;
     border-style: solid;
-    border-width: 3px;  
-    width: 600px;
+    border-width: 3px;
+    border-color: green;
+    box-shadow: 0 0 10px green;
+}
+
+h1 {
+    font-family: "press Start 2P", "consolas", sans-serif;
+    color: green;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+
+#intro {
+    height: 130px;
 }
 
 .web_surfing {
-    color: green;
-    width: 100px;
-    height: 100px;
-    border: 3px;
-    border-style: solid;
-    text-align: center;
+    width: 200px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("/static/images/web_surfing_studio.png");
@@ -28,45 +42,42 @@ h1 {
     background-size: cover;
 }
 
-#p1 {
-    color: blue;
-    text-align: center;
+#info {
+    width: 350px;
+    height: 75px;
+}
+
+#contact {
     font-family: "consolas", sans-serif;
-    border-style: solid;
-    border-width: 3px;
-    border-color: green;
+    font-size: 25px;
     width: 200px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 10px;
 }
 
-#p2 {
-    color: red;
-    text-align: center;
-    font-family: "consolas", sans-serif;
-    border-style: solid;
-    border-width: 3px;
-    border-color: green;
+a {
+    display: block;    
     width: 200px;
-    height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a:link {
-    color: white;
     text-align: center;
-    font-family: "consolas", sans-serif;
-    border-style: solid;
-    border-width: 3px;
-    border-color: green;
     margin-left: auto;
     margin-right: auto;
-    text-decoration: none;
+    border-style: none;
+    box-shadow: none;
 }
 
-#computer_movement {
+a:link, a:visited {
+  color: #00ff00;
+  font-weight: bold;
+  font-family: "consolas", sans-serif;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00ccff;
+  text-decoration: underline;
+}
+
+.floating {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -75,9 +86,6 @@ a:link {
     background-image: url("/static/images/computer.png");
     background-position: center;
     background-size: cover;
-
-    animation: floating;
-    animation-duration: 5s;
 }
 
 /*Turn off Caching in Network Tab when testing */
