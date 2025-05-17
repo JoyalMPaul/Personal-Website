@@ -4,4 +4,15 @@ body {
 
 h1 {
     color: green;
+    font-family: "press Start 2P", "consolas", sans-serif;
+}
+
+#p1 {
+    color: blue;
+    font-family: "consolas", sans-serif;
+}
+
+#p2 {
+    color: white;
+    font-family: "consolas", sans-serif;
 }
