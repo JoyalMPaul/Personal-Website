@@ -1,17 +1,26 @@
+/*---Background---*/
 body {
-    background-color: black;
     margin: 0;
     overflow-x: hidden;
+    height: 100%;
+    background-image: 
+    url('/static/images/background_1.png'),
+    url('/static/images/background_2.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 55%, 100% 45%;
+    background-position: top, bottom;
 } 
 
+
+/*---Commons---*/
 #intro, #info, #learning, #contact, h1 {
   width: 90%;
-  color: white; 
+  color: black; 
   max-width: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 #intro, #info, #learning, #contact, #skills, a {
@@ -33,46 +42,65 @@ h1 {
 }
 
 #intro {
-    height: 130px;
+    font-size: 15px;
+    height: 70px;
+    line-height: 1;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    border-style: none;
+    box-shadow: none;
 }
 
-
 /*---Tech Stack---*/
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skills-left, .skills-right {
+  flex: 1 1 45%;
+}
+
 #skills {
-    color: white;
-    border-color: #00ff00;
-    border-style: solid;
-    border-radius: 12px;
+    color: black;
+    border-style: none;
+    box-shadow: none;
     width: 90%;
+    max-width: 600px;
     margin: auto;
     font-family: "Consolas", sans-serif;
-    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 0.5;
 }
 
 #skills h2 {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .skill-section {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .skill-section h3 {
-    font-size: 24px;
+    font-size: 18px;
     color: #007f5f;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .skill-section ul {
     list-style-type: square;
-    padding-left: 20px;
+    padding-left: 3px;
+    line-height: 0.5;
 }
 
 .skill-section li {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 15px;
+    margin-bottom: 2px;
+    line-height: 0.5;
 }
 
 
