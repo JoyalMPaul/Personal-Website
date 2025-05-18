@@ -4,16 +4,17 @@ body {
     overflow-x: hidden;
 } 
 
-#intro, #info, #contact, h1 {
+#intro, #info, #learning, #contact, h1 {
   width: 90%;
   color: white; 
   max-width: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 }
 
-#intro, #info, #contact, #skills, a {
+#intro, #info, #learning, #contact, #skills, a {
     font-family: "consolas", sans-serif;
     font-size: 16px;
     border-style: solid;
@@ -38,7 +39,6 @@ h1 {
 
 /*---Tech Stack---*/
 #skills {
-    padding: 30px;
     color: white;
     border-color: #00ff00;
     border-style: solid;
@@ -46,6 +46,7 @@ h1 {
     width: 90%;
     margin: auto;
     font-family: "Consolas", sans-serif;
+    padding: 20px;
 }
 
 #skills h2 {
@@ -95,6 +96,10 @@ h1 {
     height: 75px;
 }
 
+#learning {
+    width: 350px;
+    height: 50px;
+}
 
 /*---Contact---*/
 #contact {
@@ -113,11 +118,10 @@ h1 {
     display: block;
     text-align: center;
     text-decoration: none;
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 a {
-    width: 200px;
     text-align: center;
     border-style: none;
     box-shadow: none;
