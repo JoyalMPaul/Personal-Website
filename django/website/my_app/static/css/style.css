@@ -1,37 +1,81 @@
 body {
     background-color: black;
+    margin: 0;
+    overflow-x: hidden;
 } 
 
 #intro, #info, #contact, h1 {
   width: 90%;
   color: white; 
   max-width: 600px;
-  background-color: black;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-#intro, #info, a {
+#intro, #info, #contact, #skills, a {
     font-family: "consolas", sans-serif;
     font-size: 16px;
     border-style: solid;
     border-width: 3px;
     border-color: green;
     box-shadow: 0 0 10px green;
+    border-radius: 10px; 
 }
 
+
+/*---Header---*/
 h1 {
+    color: #00ff00;
     font-family: "press Start 2P", "consolas", sans-serif;
-    color: green;
     height: 50px;
 }
-
 
 #intro {
     height: 130px;
 }
 
+
+/*---Tech Stack---*/
+#skills {
+    padding: 30px;
+    color: white;
+    border-color: #00ff00;
+    border-style: solid;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    font-family: "Consolas", sans-serif;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skill-section {
+    margin-bottom: 25px;
+}
+
+.skill-section h3 {
+    font-size: 24px;
+    color: #007f5f;
+    margin-bottom: 10px;
+}
+
+.skill-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skill-section li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+/*---Current Positon---*/
 .web_surfing {
     width: 200px;
     height: 200px;
@@ -40,6 +84,10 @@ h1 {
     background-image: url("/static/images/web_surfing_studio.png");
     background-position: center;
     background-size: cover;
+    position: relative;  
+    z-index: -1; 
+    border-radius: 20px; 
+    overflow: hidden;         
 }
 
 #info {
@@ -47,19 +95,30 @@ h1 {
     height: 75px;
 }
 
+
+/*---Contact---*/
 #contact {
     font-family: "consolas", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     width: 200px;
-    height: 10px;
+    border: 3px solid green; 
+    border-radius: 10px; 
+}
+
+#title {
+    color: white;
+}
+
+#contact a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
 }
 
 a {
-    display: block;    
     width: 200px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     border-style: none;
     box-shadow: none;
 }
@@ -77,6 +136,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+/*---Movement---*/
 .floating {
     width: 100px;
     height: 100px;
