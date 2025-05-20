@@ -135,7 +135,7 @@ h1 {
 }
 
 #learning {
-    grid-row: 6 / 11;
+    grid-row: 6 / 13;
     grid-column: 12 / 18;
 }
 
@@ -146,7 +146,7 @@ h1 {
     object-fit: cover;    
     border: 2px solid #ccc; 
     overflow: hidden;
-    grid-row: 12 / 22;
+    grid-row: 13 / 23;
     grid-column: 11 / 17;
     margin-left: 20%;
 }
