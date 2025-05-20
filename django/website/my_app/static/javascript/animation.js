@@ -1,4 +1,7 @@
-window.alert('Nice to see you here!');
+window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".floating");

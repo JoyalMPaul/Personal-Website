@@ -32,20 +32,20 @@
             <!-- Left Column -->
             <div class="skills-left">
             <div class="skill-section">
-                <h3>Backend Languages</h3>
+                <h3>Languages</h3>
                 <ul>
-                <li>Python (2 years) <i class="devicon-python-plain"></i></li>
-                <li>C (6 months) <i class="devicon-c-plain"></i></li>
-                <li>Assembly (6 months) <i class="fa-solid fa-microchip"></i></li>
+                <li>Python <i class="devicon-python-plain"></i></li>
+                <li>C <i class="devicon-c-plain"></i></li>
+                <li>Assembly <i class="fa-solid fa-microchip"></i></li>
                 </ul>
             </div>
 
             <div class="skill-section">
-                <h3>Frontend Languages</h3>
+                <h3>Frontend</h3>
                 <ul>
-                <li>HTML (6 months) <i class="fa-brands fa-html5"></i></li>
-                <li>CSS (6 months) <i class="fa-brands fa-css3-alt"></i></li>
-                <li>JavaScript (3 months) <i class="fa-brands fa-js"></i></li>
+                <li>HTML <i class="fa-brands fa-html5"></i></li>
+                <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
+                <li>JavaScript <i class="fa-brands fa-js"></i></li>
                 </ul>
             </div>
             </div>
@@ -55,18 +55,18 @@
             <div class="skill-section">
                 <h3>Web Development</h3>
                 <ul>
-                <li>Django (3 months) <i class="devicon-django-plain"></i></li>
+                <li>Django <i class="devicon-django-plain"></i></li>
                 </ul>
             </div>
 
             <div class="skill-section">
                 <h3>Tools & Technologies</h3>
                 <ul>
-                <li>Windows (7+ years) <i class="fa-brands fa-windows"></i></li>
-                <li>Visual Studio Code (1 year) <i class="devicon-visualstudio-plain"></i></li>
-                <li>Git & GitHub (1 year) <i class="fa-brands fa-git-alt"></i> / <i class="fa-brands fa-github"></i></li>
-                <li>Vim (6 months) <i class="devicon-vim-plain"></i></li>
-                <li>PyCharm (1 year) <i class="devicon-pycharm-plain"></i></li>
+                <li>Windows <i class="fa-brands fa-windows"></i></li>
+                <li>Visual Studio Code <i class="devicon-visualstudio-plain"></i></li>
+                <li>Git & GitHub <i class="fa-brands fa-git-alt"></i> / <i class="fa-brands fa-github"></i></li>
+                <li>Vim <i class="devicon-vim-plain"></i></li>
+                <li>PyCharm <i class="devicon-pycharm-plain"></i></li>
                 </ul>
             </div>
             </div>
@@ -77,9 +77,10 @@
 
     <div class="main-container">
         <!--Current Roles-->
-        <div class="web_surfing"></div>
+        <a href="https://websurfingstudios.com" target="_blank" class="web_surfing"></a>
+
         <p id="info">Currently working as a Software Development Intern at Web Surfing 
-            Studios! Visit their page:<a href="https://websurfingstudios.com/">https://websurfingstudios.com/ </a>
+            Studios! Visit their page: <a href="https://websurfingstudios.com/">https://websurfingstudios.com/ </a>
         </p>
 
         <!--Currently Learning-->
@@ -88,6 +89,8 @@
             Learning PyTorch and AWS to impove my skills in Machine Learning and Cloud Computing 
         </p>
         
+        <!--Profile Photo-->
+        <img src="{% static 'images/profile_pic.jpeg' %}" class="profile-pic">
 
         <!--Contacts-->
         <div id="contact">
@@ -95,34 +98,50 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
             <a href="https://www.linkedin.com/in/joyal-paul-955280354/">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="https://github.com/JoyalMPaul">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://leetcode.com/u/JoyalMPaul/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87 28.87" id="linkedin">
-                    <g id="Layer_2">
-                        <g id="Layer_1-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87 28.87" id="linkedin" width="50" height="50">
+                <g id="Layer_2">
+                    <g id="Layer_1-2">
                         <rect width="28.87" height="28.87" rx="6.48" ry="6.48" style="fill:#0b86ca"></rect>
                         <path d="M8 12h3v9.68H8zm1.53-4.81a1.74 1.74 0 1 1-1.74 1.75 1.74 1.74 0 0 1 1.74-1.75M12.92 12h2.89v1.32a3.16 3.16 0 0 1 2.85-1.56c3 0 3.61 2 3.61 4.61v5.31h-3V17c0-1.12 0-2.57-1.56-2.57s-1.8 1.22-1.8 2.48v4.79h-3z" style="fill:#fff"></path>
-                        </g>
                     </g>
+                </g>
+            </svg>
+
+            <a href="https://github.com/JoyalMPaul">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="github" width="50" height="50">
+                    <g fill="#181616">
+                        <path fill-rule="evenodd" d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z" clip-rule="evenodd"></path>
+                        <path d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zm-.524-.388M39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm-.406-.437M40.97 66.968c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm0 0M43.268 69.336c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm0 0M46.44 70.71c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm0 0M49.92 70.965c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm0 0M53.16 70.414c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"></path>
+                    </g>
+                    <path fill="#100E0F" d="M24.855 108.302h-10.7a.5.5 0 0 0-.5.5v5.232a.5.5 0 0 0 .5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 0 0-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 0 0-.5-.5zM79.506 94.81H73.48a.5.5 0 0 0-.498.503l.002 11.644h-9.392V95.313a.5.5 0 0 0-.497-.503H57.07a.5.5 0 0 0-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 0 0 .497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 0 0 .497-.504v-31.53c0-.278-.22-.502-.497-.502zM32.34 95.527c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zM35.296 105.135H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-6.346-14.553a.5.5 0 0 0-.498-.502zM102.902 105.182h-5.98a.5.5 0 0 0-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 0 0-.497-.504h-6.068a.502.502 0 0 0-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 0 0 .5-.504l-.003-21.166a.504.504 0 0 0-.5-.502zM119.244 104.474c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 0 0-.497-.503H107a.5.5 0 0 0-.5.503v31.53a.5.5 0 0 0 .5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zM53.195 122.12c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 0 0 .5-.504v-4.856a.5.5 0 0 0-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 0 0-.36.48v3.877a.5.5 0 0 0 .497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 0 0-.5-.502z"></path>
                 </svg>
             </a>
 
             <a href="mailto:joyalmathewpaul@gmail.com">
-                <i class="fa-solid fa-square-envelope"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" id="gmail" enable-background="new 0 0 141.7 141.7" viewBox="0 0 141.7 141.7" width="50" height="50">
+                    <path fill="#4285f4" d="M24.3,111.3h17.2V69.6L16.9,51.3V104C16.9,108,20.2,111.3,24.3,111.3z"></path>
+                    <path fill="#34a853" d="M100.3,111.3h17.2c4.1,0,7.4-3.3,7.4-7.4V51.3l-24.5,18.4V111.3z"></path>
+                    <path fill="#fbbc04" d="M100.3,37.8v31.9l24.5-18.4v-9.8c0-9.1-10.4-14.3-17.7-8.8L100.3,37.8z"></path>
+                    <path fill="#ea4335" fill-rule="evenodd" d="M41.4,69.6V37.8l29.4,22.1l29.4-22.1v31.9L70.9,91.7L41.4,69.6z" clip-rule="evenodd"></path>
+                    <path fill="#c5221f" d="M16.9,41.4v9.8l24.5,18.4V37.8l-6.9-5.2C27.3,27.2,16.9,32.4,16.9,41.4z"></path>
+                    </svg>
             </a>
+
+            <a href="https://leetcode.com/u/JoyalMPaul/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="leetcode" width="50" height="50>
+                    <path fill="#B3B1B0" d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z"></path>
+                    <path fill="#E7A41F" d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z"></path>
+                    <path fill="#070706" d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z"></path>
+                </svg>
+            </a>
+
         </div>
     </div>
 
     <!--Animations-->
-    <!--<div class="floating" id="computer1"></div>
+    <div class="floating" id="computer1"></div>
     <div class="floating" id="computer2"></div>
-    <script src="{% static 'javascript/animation.js' %}"></script>-->
+    <script src="{% static 'javascript/animation.js' %}"></script>
 
 </body>
 

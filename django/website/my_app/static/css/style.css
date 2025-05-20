@@ -34,7 +34,7 @@ body {
 
 /*---Header---*/
 h1 {
-    color: #00ff00;
+    color: white;
     font-family: "press Start 2P", "consolas", sans-serif;
     height: 50px;
     margin-left: auto;
@@ -57,7 +57,7 @@ h1 {
 .skills-columns {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
@@ -74,7 +74,7 @@ h1 {
     margin: auto;
     font-family: "Consolas", sans-serif;
     padding-bottom: 30px;
-    line-height: 0.5;
+    line-height: 0;
 }
 
 #skills h2 {
@@ -110,32 +110,45 @@ h1 {
 .main-container {
   display: grid;
   grid-template-rows: repeat(26, 1fr);
-  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+  grid-template-columns: repeat(26, 1fr);
   top: 50vh;
   height: 100vh;
   width: 100%;
 }
 
 .web_surfing {
+    display: block;
     background-image: url("/static/images/web_surfing_studio.png");
     background-position: center;
     background-size: cover;
     position: relative;  
-    z-index: -1; 
+    z-index: 1; 
     border-radius: 20px; 
     overflow: hidden;   
     grid-row: 6 / 16;
-    grid-column: 2 / 3;
+    grid-column: 2 / 8;
 }
 
 #info {
     grid-row: 18 / 24;
-    grid-column: 2 / 3;
+    grid-column: 2 / 8;
 }
 
 #learning {
-    grid-row: 12 / 17;
-    grid-column: 4 / 5;
+    grid-row: 6 / 11;
+    grid-column: 12 / 18;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 130%;
+    border-radius: 50%;  
+    object-fit: cover;    
+    border: 2px solid #ccc; 
+    overflow: hidden;
+    grid-row: 12 / 22;
+    grid-column: 11 / 17;
+    margin-left: 20%;
 }
 
 /*---Contact---*/
@@ -145,12 +158,12 @@ h1 {
     border: 3px solid green; 
     border-radius: 10px; 
     line-height: 0.5;
-    grid-row: 12 / 21;
-    grid-column: 6 / 7;
+    grid-row: 7 / 23;
+    grid-column: 22 / 25;
 }
 
 #title {
-    color: white;
+    color: black;
 }
 
 #contact a {
@@ -161,7 +174,6 @@ h1 {
 }
 
 a {
-    font-size: 5px;
     text-align: center;
     border-style: none;
     box-shadow: none;
@@ -183,9 +195,9 @@ a:hover {
 
 /*---Movement---*/
 .floating {
+    position: fixed;
     width: 100px;
     height: 100px;
-    position: absolute;
     z-index: -1;
     left: 0;
     background-image: url("/static/images/computer.png");
