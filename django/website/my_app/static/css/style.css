@@ -5,9 +5,9 @@ body {
     height: 100%;
     background-image: 
     url('/static/images/background_1.png'),
-    url('/static/images/background_2.jpg');
+    url('/static/images/background_2.png');
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% 55%, 100% 45%;
+    background-size: 100% 50%, 100% 50%;
     background-position: top, bottom;
 } 
 
@@ -18,8 +18,6 @@ body {
   color: black; 
   max-width: 600px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px;
 }
 
@@ -39,6 +37,8 @@ h1 {
     color: #00ff00;
     font-family: "press Start 2P", "consolas", sans-serif;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #intro {
@@ -49,6 +49,8 @@ h1 {
     padding-bottom: 30px;
     border-style: none;
     box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---Tech Stack---*/
@@ -105,37 +107,46 @@ h1 {
 
 
 /*---Current Positon---*/
+.main-container {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  top: 50vh;
+  height: 100vh;
+  width: 100%;
+}
+
 .web_surfing {
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: url("/static/images/web_surfing_studio.png");
     background-position: center;
     background-size: cover;
     position: relative;  
     z-index: -1; 
     border-radius: 20px; 
-    overflow: hidden;         
+    overflow: hidden;   
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
 }
 
 #info {
-    width: 350px;
-    height: 75px;
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
 }
 
 #learning {
-    width: 350px;
-    height: 50px;
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
 }
 
 /*---Contact---*/
 #contact {
     font-family: "consolas", sans-serif;
     font-size: 30px;
-    width: 200px;
     border: 3px solid green; 
     border-radius: 10px; 
+    line-height: 0.5;
+    grid-row: 2 / 3;
+    grid-column: 5 / 7;
 }
 
 #title {
@@ -146,7 +157,7 @@ h1 {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 a {
