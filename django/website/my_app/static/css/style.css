@@ -117,6 +117,8 @@ h1 {
 }
 
 .web_surfing {
+    width: 40vh;
+    height: 40vh;
     display: block;
     background-image: url("/static/images/web_surfing_studio.png");
     background-position: center;
@@ -126,7 +128,7 @@ h1 {
     border-radius: 20px; 
     overflow: hidden;   
     grid-row: 6 / 16;
-    grid-column: 2 / 8;
+    grid-column: 3 / 9;
 }
 
 #info {
@@ -140,13 +142,13 @@ h1 {
 }
 
 .profile-pic {
-    width: 100%;
-    height: 130%;
+    width: 45vh;
+    height: 45vh;
     border-radius: 50%;  
     object-fit: cover;    
     border: 2px solid #ccc; 
     overflow: hidden;
-    grid-row: 13 / 23;
+    grid-row: 15 / 25;
     grid-column: 11 / 17;
     margin-left: 20%;
 }
@@ -204,5 +206,34 @@ a:hover {
     background-position: center;
     background-size: cover;
 }
+
+
+@media (max-width: 600px) {
+  body {
+    background-image: 
+    url('/static/images/background_1_mobile.png'),
+    url('/static/images/background_2.png');
+    background-size: 210vw 55%, 100% 50%;  /* first background wider and a bit taller */
+    background-position: center top, bottom; /* center horizontally */
+  }
+
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;  /* Only one column */
+    grid-template-rows: auto;    /* Rows adjust height automatically */
+    gap: 10px;                   /* Optional spacing between stacked items */
+  }
+
+  /* Make each child element span the single column */
+  .main-container > * {
+    grid-column: 1 / -1 !important; /* Force all items to span full width */
+    grid-row: auto !important;
+    margin: 0 auto; /* Center items horizontally if needed */
+    width: 90%;     /* Optional: restrict width */
+  }
+}
+
+
 
 /*Turn off Caching in Network Tab when testing */
