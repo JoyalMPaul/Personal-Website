@@ -208,32 +208,30 @@ a:hover {
 }
 
 
+/*---Mobile Screen--*/
 @media (max-width: 600px) {
   body {
     background-image: 
     url('/static/images/background_1_mobile.png'),
     url('/static/images/background_2.png');
-    background-size: 210vw 55%, 100% 50%;  /* first background wider and a bit taller */
-    background-position: center top, bottom; /* center horizontally */
+    background-size: 210vw 55%, 100% 50%; 
+    background-position: center top, bottom; 
   }
-
 
   .main-container {
     display: grid;
-    grid-template-columns: 1fr;  /* Only one column */
-    grid-template-rows: auto;    /* Rows adjust height automatically */
-    gap: 10px;                   /* Optional spacing between stacked items */
+    grid-template-columns: 1fr;  
+    grid-template-rows: auto;    
+    gap: 10px;                   
   }
 
-  /* Make each child element span the single column */
   .main-container > * {
-    grid-column: 1 / -1 !important; /* Force all items to span full width */
+    grid-column: 1 / -1 !important; 
     grid-row: auto !important;
-    margin: 0 auto; /* Center items horizontally if needed */
-    width: 90%;     /* Optional: restrict width */
+    margin: 0 auto;
+    width: 90%;   
   }
 }
-
 
 
 /*Turn off Caching in Network Tab when testing */
