@@ -2,7 +2,7 @@
 
 ## Project Description
 
-👉 **Live Website:** [Website](https://joyal-paul.onrender.com) </br>
+👉 **Live Website:** [My Website](https://joyal-paul.onrender.com) </br>
 This is my dynamic personal portfolio website built with the Django web framework. </br>
 
 **BEWARE**: Render does take a minute or more to deploy my website after it goes inactive for 15+ min, so if you are in a rush, just click the thumbnail for the demo video below. 
