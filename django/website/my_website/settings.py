@@ -67,7 +67,8 @@ INTERNAL_IPS = [
     # ...
 ]
 
-STATIC_URL = 'my_app/static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 ROOT_URLCONF = 'my_website.urls'
 
