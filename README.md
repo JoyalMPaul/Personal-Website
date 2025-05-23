@@ -6,7 +6,7 @@ Website: https://joyal-paul.onrender.com </br>
 This is my personal website I created using the Django framework in Python, and I used Render.com to deploy it.  
 ***    
 
-## GUI Design
+## GUI Design -- (Click on the Thumbnail to watch a quick YT demo)
 
 [![Watch the video](https://github.com/user-attachments/assets/a162c0c4-3f66-4154-80d4-bc89043199e2)](https://www.youtube.com/watch?v=VZun4DXvJtU)
 
