@@ -12,9 +12,9 @@ This is my personal website I created using the Django framework in Python, and 
 
 ### Teck Stack
 
- - Django (backend)
+ - Django-framework in Python (Backend)
  - HTML / CSS / JavaScript (Frontend)
- - Gunicorn (deployment library)
+ - Gunicorn / WhiteNoise (deployment assistance library)
  - Render.com [Free Tier] for deployment and hosting
 
 ### Extra
