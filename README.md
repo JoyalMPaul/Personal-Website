@@ -19,5 +19,5 @@ This is my personal website I created using the Django framework in Python, and 
 
 ### Extra
 
-The display for mobile and Ipad screens are still in progress, so I highly recommend veiwing this on a laptop or PC screen. Also, Render.com's free tier takes time to deploy so feel free to look at the demo video if you don't want to wait the minute or two it takes to deploy. 
+The display for mobile and Ipad screens are still in progress, so I highly recommend veiwing this on a laptop or PC screen. Also, Render.com's free tier takes time to deploy so feel free to look at the demo video if you don't want to wait the minute or two it takes to deploy. Finally, SUBSCRIBE if you want to be updated with any more projects, tutorials, etc. that are on the way!
 
