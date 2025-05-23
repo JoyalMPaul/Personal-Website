@@ -12,10 +12,12 @@ This is my personal website I created using the Django framework in Python, and 
 
 ### Teck Stack
 
- - Django
- - 
+ - Django (backend)
+ - HTML / CSS / JavaScript (Frontend)
+ - Gunicorn (deployment library)
+ - Render.com [Free Tier] for deployment and hosting
 
 ### Extra
 
-The display for mobile and Ipad screens are still in progress, so I highly recommend veiwing this on a laptop or PC screen. 
+The display for mobile and Ipad screens are still in progress, so I highly recommend veiwing this on a laptop or PC screen. Also, Render.com's free tier takes time to deploy so feel free to look at the demo video if you don't want to wait the minute or two it takes to deploy. 
 
