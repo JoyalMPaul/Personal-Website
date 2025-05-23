@@ -8,7 +8,8 @@ This is my personal website I created using the Django framework in Python, and 
 
 ## GUI Design
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch the video](![Thumbnail_for_website](https://github.com/user-attachments/assets/a162c0c4-3f66-4154-80d4-bc89043199e2)
+)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=VZun4DXvJtU))
 
 ### How to Use
 
