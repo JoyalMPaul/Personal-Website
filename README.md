@@ -1,4 +1,4 @@
-# 📈 Personal-Website
+# 🌐 Personal-Website
 
 ## Project Description
 
