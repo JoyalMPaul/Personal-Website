@@ -8,7 +8,7 @@ This is my personal website I created using the Django framework in Python, and 
 
 ## GUI Design
 
-
+https://www.youtube.com/watch?v=y08qhn8pes8
 
 ### How to Use
 
