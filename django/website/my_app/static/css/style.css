@@ -218,11 +218,51 @@ a:hover {
     background-position: center top, bottom; 
   }
 
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr;  
-    grid-template-rows: auto;    
-    gap: 10px;                   
+  #intro {
+    font-size: 12px;       /* smaller font */
+    height: auto;          /* let height adjust based on content */
+    padding-top: 60px;     /* reduce top padding */
+    padding-bottom: 10px;  /* reduce bottom padding */
+    margin-left: 10px;     /* small side margins */
+    margin-right: 10px;
+  }
+  .skills-columns {
+    gap: 0; /* Remove the gap to save space */
+  }
+
+  .skills-left,
+  .skills-right {
+    flex: 1 1 50%; /* Force 2 columns exactly */
+    max-width: 50%; /* Prevent columns from growing */
+  }
+
+  #skills {
+    padding-bottom: 15px;
+    line-height: 1.1;
+  }
+
+  #skills h2 {
+    font-size: 18px;
+  }
+
+  .skill-section {
+    margin-bottom: 5px;
+  }
+
+  .skill-section h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  .skill-section ul {
+    padding-left: 10px;
+    line-height: 1;
+  }
+
+  .skill-section li {
+    font-size: 14px;
+    margin-bottom: 1px;
+    line-height: 1;
   }
 
   .main-container > * {
